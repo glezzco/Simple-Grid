@@ -1,0 +1,123 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Light_Cyan: hsl(179, 44%, 51%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+html{
+    font-size: 62,2%;
+    background-color: var(--Light_Gray);
+    box-sizing: border-box;
+
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+.container{
+    margin: 5rem auto;
+   
+}
+
+/*Aqui comienza la parte de Join our community*/
+.join{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.join span{
+    color: var(--Bright_Yellow);
+    font-weight: 700;
+}
+
+.join p{
+    color: var(--Grayish_Blue);
+}
+
+.join h1{
+    color: var(--Cyan);
+}
+/*Aqui termina la parte de Join our community*/
+
+/*Aqui cominza Monthly*/
+.monthly{
+    background-color: var(--Cyan);
+    color: var(--Light_Gray);
+    padding: 1.5rem;
+}
+
+.per{
+color: rgba(255, 254, 254, 0.493);
+}
+
+.monthly span{
+ font-weight: 700;
+ font-size: 30px;
+ color: white;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -2px 20px -8px rgba(0, 0, 0, 0.363);
+    
+}
+
+.monthly button{
+    padding: 1rem;
+    background-color: var(--Bright_Yellow);
+    color: var(--Light_Gray);
+    border: 0;
+    border-radius: 0.5rem;
+    width: 20rem;
+}
+
+/*Aqui termina Monthly*/
+
+/*Aqui empieza el Why*/
+.why{
+    background-color: var(--Light_Cyan);
+    color: var(--Light_Gray);
+    padding: 1.5rem;
+}
+/*Aqui termina el Why*/
+
+/*media query*/
+@media (max-width: 700px) {
+        .container{
+            width: 350px;
+            margin: 0 auto;
+            
+}
+        
+  }
+
+@media (min-width: 700px) { 
+        .container{
+            width: 600px; 
+           
+            display: grid;
+            margin: 15rem auto;
+        }
+
+        .container2{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);        
+        }
+
+        .boton{
+          width: 15rem;  
+        }
+ }
